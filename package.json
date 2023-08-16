@@ -11,6 +11,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "prettier": "^2.5.1",
+    "rollup-plugin-delete": "^2.0.0",
     "turbo": "latest"
   },
   "name": "AdapterLayer",
@@ -18,5 +19,10 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^3.28.0"
+  }
 }
